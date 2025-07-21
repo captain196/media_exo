@@ -338,9 +338,9 @@ public class DefaultTimeBar extends View implements TimeBar {
         int playedAdMarkerColor =
             a.getInt(
                 R.styleable.DefaultTimeBar_played_ad_marker_color, DEFAULT_PLAYED_AD_MARKER_COLOR);
-        playedPaint.setColor(playedColor);
-        scrubberPaint.setColor(scrubberColor);
-        bufferedPaint.setColor(bufferedColor);
+        playedPaint.setColor(Color.parseColor("#F5AF00"));
+        scrubberPaint.setColor(Color.parseColor("#F5AF00"));
+        bufferedPaint.setColor(Color.parseColor("#FEF2D3"));
         unplayedPaint.setColor(unplayedColor);
         adMarkerPaint.setColor(adMarkerColor);
         playedAdMarkerPaint.setColor(playedAdMarkerColor);
@@ -355,9 +355,9 @@ public class DefaultTimeBar extends View implements TimeBar {
       scrubberEnabledSize = defaultScrubberEnabledSize;
       scrubberDisabledSize = defaultScrubberDisabledSize;
       scrubberDraggedSize = defaultScrubberDraggedSize;
-      playedPaint.setColor(DEFAULT_PLAYED_COLOR);
-      scrubberPaint.setColor(DEFAULT_SCRUBBER_COLOR);
-      bufferedPaint.setColor(DEFAULT_BUFFERED_COLOR);
+      playedPaint.setColor(Color.parseColor("#F5AF00"));
+      scrubberPaint.setColor(Color.parseColor("#F5AF00"));
+      bufferedPaint.setColor(Color.parseColor("#FEF2D3"));
       unplayedPaint.setColor(DEFAULT_UNPLAYED_COLOR);
       adMarkerPaint.setColor(DEFAULT_AD_MARKER_COLOR);
       playedAdMarkerPaint.setColor(DEFAULT_PLAYED_AD_MARKER_COLOR);
@@ -445,7 +445,7 @@ public class DefaultTimeBar extends View implements TimeBar {
    *     playback position.
    */
   public void setPlayedColor(@ColorInt int playedColor) {
-    playedPaint.setColor(playedColor);
+    playedPaint.setColor(Color.parseColor("#F5AF00"));
     invalidate(seekBounds);
   }
 
@@ -455,7 +455,7 @@ public class DefaultTimeBar extends View implements TimeBar {
    * @param scrubberColor The color for the scrubber handle.
    */
   public void setScrubberColor(@ColorInt int scrubberColor) {
-    scrubberPaint.setColor(scrubberColor);
+    scrubberPaint.setColor(Color.parseColor("#F5AF00"));
     invalidate(seekBounds);
   }
 
@@ -467,7 +467,7 @@ public class DefaultTimeBar extends View implements TimeBar {
    *     position up to the current buffered position.
    */
   public void setBufferedColor(@ColorInt int bufferedColor) {
-    bufferedPaint.setColor(bufferedColor);
+    bufferedPaint.setColor(Color.parseColor("#FEF2D3"));
     invalidate(seekBounds);
   }
 
