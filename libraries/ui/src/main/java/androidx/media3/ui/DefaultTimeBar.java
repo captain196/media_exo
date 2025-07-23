@@ -290,12 +290,12 @@ public class DefaultTimeBar extends View implements TimeBar {
     DisplayMetrics displayMetrics = res.getDisplayMetrics();
     density = displayMetrics.density;
     fineScrubYThreshold = dpToPx(density, FINE_SCRUB_Y_THRESHOLD_DP);
-    int defaultBarHeight = dpToPx(density, 2dp);
-    int defaultTouchTargetHeight = dpToPx(density, 20dp);
+    int defaultBarHeight = dpToPx(density, 2);
+    int defaultTouchTargetHeight = dpToPx(density, 20);
     int defaultAdMarkerWidth = dpToPx(density, DEFAULT_AD_MARKER_WIDTH_DP);
-    int defaultScrubberEnabledSize = dpToPx(density, 8dp);
+    int defaultScrubberEnabledSize = dpToPx(density, 8);
     int defaultScrubberDisabledSize = dpToPx(density, DEFAULT_SCRUBBER_DISABLED_SIZE_DP);
-    int defaultScrubberDraggedSize = dpToPx(density, 12dp);
+    int defaultScrubberDraggedSize = dpToPx(density, 12);
     if (timebarAttrs != null) {
       TypedArray a =
           context
